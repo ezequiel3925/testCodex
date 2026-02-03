@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-  background: radial-gradient(circle at top, #eef5ff, #f7f8fb 45%, #ffffff);
+  background: radial-gradient(circle at top, #fef3c7, #f8fafc 50%, #ffffff);
   color: #1f2937;
   min-height: 100vh;
   display: flex;
@@ -72,7 +72,7 @@ h1 {
 
 .task-form button {
   border: none;
-  background: #6366f1;
+  background: #b45309;
   color: #ffffff;
   font-weight: 600;
   border-radius: 12px;
@@ -83,7 +83,7 @@ h1 {
 
 .task-form button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 12px 20px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 12px 20px rgba(180, 83, 9, 0.25);
 }
 
 .task-summary {
@@ -107,8 +107,8 @@ h1 {
 }
 
 .ghost:hover {
-  border-color: #6366f1;
-  color: #4f46e5;
+  border-color: #b45309;
+  color: #92400e;
 }
 
 .task-list {

@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mi lista rápida</title>
+    <title>Club Escolar de Ajedrez</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="app">
       <header class="app__header">
-        <p class="eyebrow">App web sencilla</p>
-        <h1>Mi lista rápida</h1>
-        <p class="subtitle">Agrega tareas, márcalas y límpialas en segundos.</p>
+        <p class="eyebrow">Club escolar</p>
+        <h1>Club de Ajedrez</h1>
+        <p class="subtitle">Organiza prácticas, torneos y tareas del club en un solo lugar.</p>
       </header>
 
       <section class="card">
-        <form class="task-form" aria-label="Agregar una nueva tarea">
-          <label class="sr-only" for="taskInput">Nueva tarea</label>
+        <form class="task-form" aria-label="Agregar una nueva actividad">
+          <label class="sr-only" for="taskInput">Nueva actividad</label>
           <input
             id="taskInput"
             name="task"
             type="text"
-            placeholder="Escribe una tarea..."
+            placeholder="Escribe una actividad..."
             autocomplete="off"
             required
           />
@@ -29,11 +29,13 @@
         </form>
 
         <div class="task-summary" aria-live="polite">
-          <span id="taskCount">0 tareas pendientes</span>
+          <span id="taskCount">0 actividades pendientes</span>
           <button id="clearCompleted" type="button" class="ghost">Limpiar completadas</button>
         </div>
 
-        <p id="emptyState" class="empty-state">Aún no tienes tareas. ¡Agrega la primera!</p>
+        <p id="emptyState" class="empty-state">
+          Aún no tienes actividades. ¡Agrega la primera para el club!
+        </p>
         <ul id="taskList" class="task-list" role="list"></ul>
       </section>
     </main>

@@ -6,8 +6,9 @@ const clearCompleted = document.querySelector("#clearCompleted");
 const emptyState = document.querySelector("#emptyState");
 
 const tasks = [
-  { label: "Revisar el correo", done: false },
-  { label: "Preparar la lista del mercado", done: true },
+  { label: "Organizar la práctica de aperturas", done: false },
+  { label: "Confirmar mesas para el torneo interno", done: true },
+  { label: "Enviar invitación a nuevos miembros", done: false },
 ];
 
 const renderTasks = () => {
@@ -53,7 +54,7 @@ const renderTasks = () => {
 
   const pending = tasks.filter((task) => !task.done).length;
   taskCount.textContent =
-    pending === 1 ? "1 tarea pendiente" : `${pending} tareas pendientes`;
+    pending === 1 ? "1 actividad pendiente" : `${pending} actividades pendientes`;
   emptyState.hidden = tasks.length > 0;
 };
 
