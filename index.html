@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi lista rápida</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <p class="eyebrow">App web sencilla</p>
+        <h1>Mi lista rápida</h1>
+        <p class="subtitle">Agrega tareas, márcalas y límpialas en segundos.</p>
+      </header>
+
+      <section class="card">
+        <form class="task-form" aria-label="Agregar una nueva tarea">
+          <label class="sr-only" for="taskInput">Nueva tarea</label>
+          <input
+            id="taskInput"
+            name="task"
+            type="text"
+            placeholder="Escribe una tarea..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Agregar</button>
+        </form>
+
+        <div class="task-summary" aria-live="polite">
+          <span id="taskCount">0 tareas pendientes</span>
+          <button id="clearCompleted" type="button" class="ghost">Limpiar completadas</button>
+        </div>
+
+        <p id="emptyState" class="empty-state">Aún no tienes tareas. ¡Agrega la primera!</p>
+        <ul id="taskList" class="task-list" role="list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
